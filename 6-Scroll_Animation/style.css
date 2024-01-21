@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efedd6;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 10px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+.box {
+    background-color: steelblue;
+    color: #111111;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 360px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box h3 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#carrera { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c2-modelimage-sideshot/thumbwhite/64a99f81-d97f-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carreraT { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-carrera-t-modelimage-sideshot/thumbwhite/2badf542-4ed8-11ed-80f7-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carreraCab{ background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c2cab-modelimage-sideshot/thumbwhite/9806daa1-d97f-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carrera4 {  background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c4-modelimage-sideshot/thumbwhite/2816b1c3-d980-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carrera4Cab { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c4cab-modelimage-sideshot/thumbwhite/5bb1eb2d-d980-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carreraS { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c2s-modelimage-sideshot/thumbwhite/c2cdcb07-d97f-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carreraSCab { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c2scab-modelimage-sideshot/thumbwhite/f581bdfb-d97f-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carrera4S { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c4s-modelimage-sideshot/thumbwhite/9010a6a0-d980-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carrera4SCab { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c4scab-modelimage-sideshot/thumbwhite/0803a05d-d981-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#targa4 { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-ta4-modelimage-sideshot/thumbwhite/83730045-d983-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#targa4S { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-ta4s-modelimage-sideshot/thumbwhite/b9697137-d983-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carreraGTS { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c2-gts-modelimage-sideshot/thumbwhite/bb8e6ab3-d31e-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carreraGTSCab { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c2cab-gts-modelimage-sideshot/thumbwhite/e3749e18-d31e-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carrera4GTS { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c4-gts-modelimage-sideshot/thumbwhite/7315cc10-d3f3-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#carrera4GTSCab { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-c4cab-gts-modelimage-sideshot/thumbwhite/3313b6ce-d31f-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#targa4GTS { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-ta4-gts-modelimage-sideshot/thumbwhite/0919d2fa-d31f-11eb-80d9-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#edition50yrs { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-ta4-gts-pde-modelimage-sideshot/thumbwhite/7ddd6c82-5dad-11ec-80e5-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#turbo { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/911-tu-modelimage-sideshot/thumbwhite/fe21baca-833c-11eb-80d3-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#turboCab { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/911-tu-cab-modelimage-sideshot/thumbwhite/a57b47d8-8340-11eb-80d3-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#turboS { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/911-tus-modelimage-sideshot/thumbwhite/930894f2-6214-11ea-80c8-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#turboSCab { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/911-tus-cab-modelimage-sideshot/thumbwhite/0be56286-3e8c-11ea-80c8-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#gt3 { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-gt3-modelimage-sideshot/thumbwhite/fcb6d09a-51bc-11eb-80d1-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#gt3touring { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-gt3-touring-modelimage-sideshot/thumbwhite/6fb997a6-a278-11eb-80d5-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#gt3RS { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-gt3-rs-modelimage-sideshot/thumbwhite/d5f44326-1a15-11ed-80f5-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#sportClassic { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-sc-modelimage-sideshot/thumbwhite/5df5bbc1-b98f-11ec-80ed-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
+#dakar { background-image: url('https://files.porsche.com/filestore/image/multimedia/none/992-dakar-modelimage-sideshot/thumbwhite/4b5ad412-642c-11ed-80f7-005056bbdc38;sJ;twebp/porsche-thumbwhite.webp'); }
